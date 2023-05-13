@@ -9,6 +9,7 @@
 }
 
 * {
+  border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,7 +20,7 @@
 ******************/
 
 body {
-  text-align: left;
+  text-align: center;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   display: grid;
@@ -32,8 +33,48 @@ main {
   background: var(--lGrayishBlue);
   padding: 2rem 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
+}
+
+/*****************
+***Fylo section***
+*****************/
+
+.fylo {
+  padding: 2rem;
+  width: 343px;
+  height: auto;
+  text-align: left;
+  background: var(--dBlue);
+  border-radius: 10px 100px 10px 10px;
+}
+
+.logos {
+  margin-top: 2rem;
+}
+
+.logos > div {
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+  background-color: var(--vdBlue);
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.item1 {
+  background: url("./images/icon-document.svg") no-repeat center;
+}
+
+.item2 {
+  background: url("./images/icon-folder.svg") no-repeat center;
+}
+
+.item3 {
+  background: url("./images/icon-upload.svg") no-repeat center;
 }
 
 /********************
