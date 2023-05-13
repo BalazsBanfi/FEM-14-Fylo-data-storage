@@ -30,7 +30,8 @@ body {
 main {
   min-width: 100vw;
   min-height: 100vh;
-  background: var(--lGrayishBlue);
+  background: url("./images/bg-mobile.png") no-repeat;
+  background-size: cover;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
