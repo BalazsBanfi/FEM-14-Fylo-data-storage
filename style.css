@@ -82,6 +82,47 @@ main {
 ***Used GB section***
 ********************/
 
+.storage {
+  padding: 2rem;
+  width: 343px;
+  height: auto;
+  background: var(--dBlue);
+  border-radius: 10px;
+  color: var(--paleBlue);
+}
+
+
+/***********
+***Slider***
+***********/
+
+.slider1 {
+  width: 100%;
+  height: 25px;
+  padding: 2px;
+  border-radius: 20px;
+  background: var(--vdBlue);
+  opacity: 0.5;
+}
+
+.slider2 {
+  height: 100%;
+  width: 81.5%;
+  padding: 1px;
+  border-radius: 20px;
+  
+  background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
+}
+
+.ball {
+  height: 14px;
+  width: 14px;
+  float: right;
+  border-radius: 50%;
+  
+  background: white;
+}
+
 /********************
 ***GB Left section***
 ********************/
