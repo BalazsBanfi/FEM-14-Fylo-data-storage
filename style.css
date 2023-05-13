@@ -1,0 +1,55 @@
+:root {
+  --gradient1: hsl(6, 100%, 80%);
+  --gradient2: hsl(335, 100%, 65%);
+
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --dBlue: hsl(228, 56%, 26%);
+  --vdBlue: hsl(229, 57%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*****************
+***Body section***
+******************/
+
+body {
+  text-align: left;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: var(--lGrayishBlue);
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/********************
+***Used GB section***
+********************/
+
+/********************
+***GB Left section***
+********************/
+
+/************************
+***Media query section***
+************************/
+
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 1300px) {
+}
