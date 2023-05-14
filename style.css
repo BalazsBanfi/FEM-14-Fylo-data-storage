@@ -6,6 +6,7 @@
   --grayishBlue: hsl(229, 7%, 55%);
   --dBlue: hsl(228, 56%, 26%);
   --vdBlue: hsl(229, 57%, 11%);
+  --vdBlueOp: hsl(229, 57%, 11%, 0.5);
 }
 
 * {
@@ -112,25 +113,23 @@ main {
   height: 22px;
   padding: 2px;
   border-radius: 20px;
-  background: var(--vdBlue);
-  opacity: 0.5;
+  background: var(--vdBlueOp);
 }
 
 .slider2 {
   height: 100%;
   width: 81.5%;
-  padding: 1px;
+  padding: 2px;
   border-radius: 20px;
 
   background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
 }
 
 .ball {
-  height: 14px;
-  width: 14px;
+  height: 12px;
+  width: 12px;
   float: right;
   border-radius: 50%;
-
   background: white;
 }
 
@@ -145,7 +144,7 @@ main {
 ***GB Left section***
 ********************/
 
-.gigaB {  
+.gigaB {
   padding: 1.25rem;
   width: 160px;
   height: auto;
@@ -170,7 +169,42 @@ main {
 ************************/
 
 @media screen and (min-width: 800px) {
-}
+  main {
+    background: url("./images/bg-desktop.png") no-repeat var(--vdBlue);
+    background-position: 0 50vh;
+    background-size: contain;
+    padding: 2rem;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .storage {
+    width: 40%;
+    position: relative;
+    top: 20.5px;
+  }
+  .storage > h1 {
+    text-align: left;
+  }
 
-@media screen and (min-width: 1300px) {
+  .gigaB {
+    border-radius: 10px 10px 0 10px;
+    right: 32px;
+    bottom: 132px;
+  }
+
+  .gigaB > p {
+    position: relative;
+  }
+
+  .gigaB > p::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: -20px;
+    top: 50px;
+    border: 1.75rem solid transparent;
+    border-bottom: none;
+    border-right: none;
+    border-top-color: #ffffff;
+  }
 }
