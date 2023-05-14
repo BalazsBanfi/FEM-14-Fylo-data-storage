@@ -9,7 +9,7 @@
 }
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,12 +32,12 @@ main {
   min-height: 100vh;
   background: url("./images/bg-mobile.png") no-repeat;
   background-size: cover;
-  padding: 2rem 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 /*****************
@@ -45,7 +45,7 @@ main {
 *****************/
 
 .fylo {
-  padding: 2rem;
+  padding: 3rem 3rem 2rem;
   width: 343px;
   height: auto;
   text-align: left;
@@ -83,22 +83,33 @@ main {
 ********************/
 
 .storage {
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
   width: 343px;
   height: auto;
   background: var(--dBlue);
   border-radius: 10px;
   color: var(--paleBlue);
+  position: relative;
 }
 
+.storage > h1 {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.storage > h1 > span {
+  font-weight: 700;
+}
 
 /***********
 ***Slider***
 ***********/
 
 .slider1 {
+  margin-bottom: 0.5rem;
   width: 100%;
-  height: 25px;
+  height: 22px;
   padding: 2px;
   border-radius: 20px;
   background: var(--vdBlue);
@@ -110,7 +121,7 @@ main {
   width: 81.5%;
   padding: 1px;
   border-radius: 20px;
-  
+
   background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
 }
 
@@ -119,13 +130,40 @@ main {
   width: 14px;
   float: right;
   border-radius: 50%;
-  
+
   background: white;
+}
+
+.gb1000 {
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
 }
 
 /********************
 ***GB Left section***
 ********************/
+
+.gigaB {  
+  padding: 1.25rem;
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  color: var(--vdBlue);
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  right: 91px;
+  bottom: -37px;
+}
+
+.gigaB span.right {
+  font-size: 13px;
+  opacity: 0.5;
+}
 
 /************************
 ***Media query section***
